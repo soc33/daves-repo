@@ -1,47 +1,59 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Pizza Console - Unsolved</title>
-  </head>
-  <body>
-    
+</head>
+
+<body>
+
     <script type="text/javascript">
 
-    // Variables
-    var name = "Joe Frasier";
-    var pizzaCount = 15;
-    var isHungry = true;
-    var totalCost = pizzaCount * 5.00;
+        // Variables
+        var name = "Joe Frasier";
+        var pizzaCount = 15;
+        var isHungry = true;
+        var totalCost = pizzaCount * 5.00;
 
-    // Instructions: Replace each of the "alert" functions below with "console.log()"
-    console.log("Welcome: " + name);
+        // Instructions: Replace each of the "alert" functions below with "console.log()"
+        console.log("Welcome: " + name);
 
-    console.log("Pizzas cost $5 each");
+        console.log("Pizzas cost $5 each");
 
-    console.log("Your total is: $" + totalCost);
+        console.log("Your total is: $" + totalCost);
 
-    console.log("Still Hungry: " + isHungry);
+        console.log("Still Hungry: " + isHungry);
 
 
 
-    var answer = confirm("Have you seen totoro?");
-      
-    alert("Your answer was " + answer);
+        var answer = confirm("Have you seen totoro?");
 
-    var name = prompt("What is your name?");
+        if (answer) {
+            alert("Awesome, me too!");
+            var ghibliMovies = prompt("What other ghibli movies do you like?")
+            var confirmMovies = confirm("You said " + ghibliMovies + ". Is that correct?")
+            if (confirmMovies) {
+                alert("Yay!")
+            }else{
+                alert("Typing errors... Really?")
+            }
+        }else {
+            alert("you noob");
+        }
+        var name = prompt("What is your name?");
 
-    var confirmCat = confirm("Do you want a cat?");
+        var confirmCat = confirm("Do you want a cat?");
 
-    if (confirmCat) {
-      alert(name + " is not ready for a cat.");
-    }
-    else {
-      alert("You're damn right you can't have a cat " + name);
-    }
+        if (confirmCat) {
+            alert(name + " is not ready for a cat.");
+        }else {
+            alert("You're damn right you can't have a cat " + name);
+        }
 
 
     </script>
-    
-  </body>
+
+</body>
+
 </html>
