@@ -32,6 +32,11 @@
         if (answer) {
             alert("Awesome, me too!");
             var ghibliMovies = prompt("What other ghibli movies do you like?")
+            if (ghibliMovies === "kiki") {
+                alert("You are too cool!")
+            }else {
+                alert("Go watch kiki, its good.")
+            }
             var confirmMovies = confirm("You said " + ghibliMovies + ". Is that correct?")
             if (confirmMovies) {
                 alert("Yay!")
@@ -53,7 +58,7 @@
 
 
     </script>
-
+    <p>Do you want more questions? Click <a href="#">here</a>!</p>
 </body>
 
 </html>
