@@ -26,16 +26,15 @@
         console.log("Still Hungry: " + isHungry);
 
 
-
+        var myGhibliMovies = ['kikis delivery service', 'totoro', 'princess mononoke', 'ponyo', 'spirited away', 'grave of the fireflies']
         var answer = confirm("Have you seen totoro?");
-
         if (answer) {
             alert("Awesome, me too!");
-            var ghibliMovies = prompt("What other ghibli movies do you like?")
-            if (ghibliMovies === "kiki") {
+            var ghibliMovies = prompt("Can you name one more ghibli movie that you like?").toLowerCase();
+            if (myGhibliMovies.indexOf(ghibliMovies) > -1) {
                 alert("You are too cool!")
             }else {
-                alert("Go watch kiki, its good.")
+                alert("Go watch some of my favorites: " + myGhibliMovies + ", they are good.")
             }
             var confirmMovies = confirm("You said " + ghibliMovies + ". Is that correct?")
             if (confirmMovies) {
